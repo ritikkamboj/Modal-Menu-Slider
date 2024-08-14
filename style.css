@@ -13,6 +13,8 @@ body {
   font-family: "Lato", sans-serif;
   margin: 0;
 }
+
+/* CSS on Nav */
 nav {
   background-color: var(--primary-color);
   border-right: 2px solid rgba(200, 200, 200, 0.1);
@@ -23,6 +25,7 @@ nav {
   width: 200px;
   height: 100vh;
   z-index: 100;
+  transform: translate(-100%);
 }
 nav .logo {
   padding: 30px 0;
@@ -50,6 +53,50 @@ nav ul li a {
   text-decoration: none;
   color: #fff;
 }
-nav ul li a:hover{
-    text-decoration: underline;
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* CSS on header  */
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 130%;
+  position: relative;
+text-align: center;
+  padding: 40px 15px;
+}
+header h1 
+{
+  margin: 0;
+}
+
+header p{
+  margin: 30px 0;
+}
+button,input[type='submit']
+{
+  background-color: var(--secondary-color);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+ 
+}
+button:focus
+{
+  outline: none;
+}
+.toggle
+{
+  padding: 5px 10px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+background-color: rgba(0,0,0,0.3);
+}
+.cta-btn
+{
+  padding: 12px 30px;
+  font-size: 20px;
 }
